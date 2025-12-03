@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // updated backend URL
+  baseURL: "https://wavenet-backend-9wvk.onrender.com/api", // updated backend URL
   withCredentials: true, // allow cookies for auth
 });
 
