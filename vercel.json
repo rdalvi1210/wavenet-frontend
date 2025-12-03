@@ -4,5 +4,15 @@
       "source": "/api/:path*",
       "destination": "https://wavenet-backend-9wvk.onrender.com/api/:path*"
     }
-  ]
+  ],
+  "redirects": [],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/" }]
 }
